@@ -41,7 +41,7 @@ c
       end
       subroutine dcftb1 (n,c,ch,wa,ifac)
       double precision c(1), ch(1), wa(1)
-      integer ifac(1)
+      double precision ifac(1)
 c
       nf = ifac(2)
       na = 0
@@ -111,7 +111,7 @@ c
       end
       subroutine dcftf1 (n,c,ch,wa,ifac)
       double precision c(1), ch(1), wa(1)
-      integer ifac(1)
+      double precision ifac(1)
 c
       nf = ifac(2)
       na = 0
@@ -181,7 +181,8 @@ c
       end
       subroutine dcfti1 (n,wa,ifac)
       double precision wa(1), arg, argh, argld, fi, tpi
-      integer ifac(1), ntryh(4)
+      double precision ifac(1)
+      integer ntryh(4)
       data ntryh(1), ntryh(2), ntryh(3), ntryh(4) /3, 4, 2, 5/
       data tpi   /  6.2831853071 7958647692 5286766559 00577d0/
 c
